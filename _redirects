@@ -1,0 +1,21 @@
+# ReserveOne route aliases
+/exotic-cars /exotic-cars/ 301
+/real-estate /real-estate/ 301
+/finance /finance/ 301
+/insurance /insurance/ 301
+/guides /guides/ 301
+/calculators/mortgage-calculator.html /calculators/million-dollar-mortgage/ 301
+/calculators/affordability-calculator.html /homes/million-dollar-mortgage-calculator-guide/ 301
+/calculators/net-worth-calculator.html /calculators/net-worth/ 301
+/calculators/exotic-car-payment-calculator.html /calculators/exotic-car-payment/ 301
+/calculators/compound-interest-calculator.html /calculators/net-worth/ 301
+/calculators/roi-calculator.html /calculators/net-worth/ 301
+
+/calculators/mortgage-calculator /calculators/mortgage-calculator.html 301
+/calculators/affordability-calculator /calculators/affordability-calculator.html 301
+/calculators/net-worth-calculator /calculators/net-worth-calculator.html 301
+/calculators/exotic-car-payment-calculator /calculators/exotic-car-payment-calculator.html 301
+/calculators/compound-interest-calculator /calculators/compound-interest-calculator.html 301
+/calculators/roi-calculator /calculators/roi-calculator.html 301
+
+/* /404.html 404

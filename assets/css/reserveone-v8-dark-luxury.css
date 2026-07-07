@@ -1,0 +1,99 @@
+
+:root{
+  --black:#030303;
+  --black2:#070707;
+  --card:#0b0b0b;
+  --card2:#101010;
+  --line:rgba(214,157,54,.42);
+  --line2:rgba(255,255,255,.14);
+  --gold:#c8962e;
+  --gold2:#e7b94f;
+  --white:#ffffff;
+  --muted:#d7d2c8;
+  --max:1440px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#030303;color:#fff;font-family:Inter,Arial,Helvetica,sans-serif;line-height:1.45}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 48px}
+.site-header{height:96px;background:#030303;color:#fff;display:flex;align-items:center;position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:28px}
+.brand{display:flex;align-items:center;gap:16px;min-width:320px}
+.crest{width:64px;height:64px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;position:relative;color:var(--gold2);font-family:Georgia,serif;font-size:36px;font-weight:900}
+.crest:before{content:"♛";position:absolute;top:-24px;left:17px;color:var(--gold2);font-size:22px}
+.brand-text strong{display:block;font-family:Georgia,'Times New Roman',serif;font-size:36px;line-height:1;letter-spacing:.04em;font-weight:700}
+.brand-text strong span{color:var(--gold2)}
+.brand-text small{display:block;color:#fff;font-size:11px;letter-spacing:.18em;text-transform:uppercase;margin-top:7px}
+.menu{display:flex;align-items:center;gap:27px;text-transform:uppercase;font-size:13px;font-weight:800;letter-spacing:.02em}
+.menu a{color:#fff;white-space:nowrap}.menu a:hover{color:var(--gold2)}
+.header-actions{display:flex;align-items:center;gap:18px}
+.search{width:38px;height:38px;border:1px solid rgba(214,157,54,.55);border-radius:3px;display:grid;place-items:center;position:relative}
+.search:before{content:"";width:17px;height:17px;border:3px solid var(--gold2);border-radius:50%;display:block}
+.search:after{content:"";position:absolute;width:10px;height:3px;background:var(--gold2);right:7px;bottom:8px;transform:rotate(45deg)}
+.signin{height:38px;padding:0 22px;border:1px solid var(--gold);color:var(--gold2);border-radius:3px;display:inline-flex;align-items:center;text-transform:uppercase;font-weight:800;font-size:13px}
+
+.hero{min-height:520px;background:
+  linear-gradient(90deg,rgba(0,0,0,.92) 0%,rgba(0,0,0,.82) 24%,rgba(0,0,0,.42) 50%,rgba(0,0,0,.08) 100%),
+  url('/assets/img/reserveone-v8-hero.jpg') right center/auto 100% no-repeat;
+  display:flex;align-items:center;position:relative;overflow:hidden;border-bottom:1px solid rgba(214,157,54,.24)
+}
+.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 62% 20%,rgba(231,185,79,.16),transparent 25%);pointer-events:none}
+.hero-copy{position:relative;z-index:2;max-width:590px}
+.hero h1{font-family:Georgia,'Times New Roman',serif;font-size:62px;line-height:.98;margin:0 0 25px;letter-spacing:-.035em;font-weight:700}
+.hero h1 span{color:var(--gold2)}
+.hero p{font-size:19px;line-height:1.55;color:#fff;margin:0 0 28px;max-width:530px}
+.hero-actions{display:flex;gap:18px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;height:49px;padding:0 28px;background:var(--gold2);color:#060606;border:1px solid var(--gold2);border-radius:4px;text-transform:uppercase;font-size:13px;font-weight:900;letter-spacing:.02em}
+.btn.secondary{background:transparent;color:#fff;border-color:var(--gold)}
+
+.section{padding:34px 0;background:#030303}
+.section-title{display:flex;align-items:center;justify-content:center;gap:14px;margin:0 0 22px;color:#fff;text-transform:uppercase;letter-spacing:.13em;font-size:18px;font-weight:900}
+.section-title:before,.section-title:after{content:"";width:50px;height:1px;background:var(--gold)}
+.categories{display:grid;grid-template-columns:repeat(5,1fr);gap:15px}
+.cat{background:linear-gradient(180deg,#111,#050505);border:1px solid var(--line2);border-radius:4px;overflow:hidden;text-align:center;box-shadow:0 14px 35px rgba(0,0,0,.35);transition:transform .15s ease,border-color .15s ease}
+.cat:hover{transform:translateY(-4px);border-color:var(--gold)}
+.cat-img{height:148px;background-size:cover;background-position:center}
+.badge{width:58px;height:58px;margin:-29px auto 11px;background:#050505;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold2);font-size:25px;position:relative;z-index:2}
+.cat h3{margin:0 0 9px;text-transform:uppercase;font-size:17px;letter-spacing:.04em}
+.cat p{color:#eee;font-size:14px;line-height:1.42;margin:0 auto 14px;max-width:225px;padding:0 12px}
+.explore{display:inline-block;color:var(--gold2);text-transform:uppercase;font-size:13px;font-weight:900;margin-bottom:18px}
+
+.content-row{display:grid;grid-template-columns:44% 56%;gap:42px;padding-top:6px}
+.sub-title{display:flex;align-items:center;gap:12px;margin:0 0 18px;color:#fff;text-transform:uppercase;letter-spacing:.12em;font-size:16px;font-weight:900}
+.sub-title:before,.sub-title:after{content:"";height:1px;background:var(--gold);flex:1}.sub-title:before{max-width:170px}.sub-title:after{max-width:260px}
+.calcs{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.calc{height:120px;background:#060606;border:1px solid var(--line2);border-radius:4px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#fff;font-size:13px;font-weight:800}
+.calc .icon{font-size:33px;color:var(--gold2);line-height:1;margin-bottom:10px}
+.view-all{text-align:center;margin-top:17px;color:var(--gold2);font-size:14px;font-weight:900;text-transform:uppercase;letter-spacing:.04em}
+.articles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.article{background:#080808;border:1px solid var(--line2);border-radius:4px;overflow:hidden;box-shadow:0 12px 26px rgba(0,0,0,.3)}
+.article-img{height:91px;background-size:cover;background-position:center}
+.article h3{font-size:14px;line-height:1.25;margin:10px;color:#fff}
+.meta{font-size:11px;color:#c8bfb1;text-transform:uppercase;margin:0 10px 12px}
+
+.trust{background:#070707;border-top:1px solid rgba(214,157,54,.25);padding:19px 0}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.trust-item{display:grid;grid-template-columns:54px 1fr;gap:15px;align-items:center;border-right:1px solid rgba(214,157,54,.35)}
+.trust-item:last-child{border-right:0}
+.trust-icon{font-size:39px;color:var(--gold2);line-height:1}
+.trust-item b{display:block;text-transform:uppercase;font-size:13px;letter-spacing:.05em;margin-bottom:4px}
+.trust-item span{display:block;color:#d4d0c9;font-size:13px;line-height:1.32}
+.version{position:fixed;right:10px;bottom:10px;background:var(--gold2);color:#080808;font-size:11px;font-weight:900;padding:5px 8px;border-radius:4px;z-index:99999}
+@media(max-width:1100px){
+  .wrap{padding:0 22px}.menu,.signin{display:none}.brand{min-width:0}.brand-text strong{font-size:28px}.brand-text small{display:none}.crest{width:48px;height:48px;font-size:28px}
+  .hero{min-height:470px;background-size:auto 100%}.hero h1{font-size:46px}.categories,.content-row,.calcs,.articles,.trust-grid{grid-template-columns:1fr}.cat-img{height:190px}.trust-item{border-right:0}
+}
+
+
+/* ReserveOne V9 polish */
+.brand-logo{display:flex;align-items:center;min-width:360px}
+.brand-logo img{height:76px;width:auto;display:block}
+.site-header{background:linear-gradient(180deg,#060606,#010101)}
+.hero{min-height:560px}
+.cat,.article,.calc{backdrop-filter:blur(6px)}
+.cat-img,.article-img{filter:saturate(1.07) contrast(1.04)}
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(200,150,46,.25)}
+.cat:hover .cat-img{transform:scale(1.025)}
+.cat-img{transition:transform .2s ease}
+@media(max-width:1100px){.brand-logo{min-width:0}.brand-logo img{height:56px}}
